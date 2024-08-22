@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Rumah Sehat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login">
+        <h2>Login</h2>
+        <form id="login-form" onsubmit="return handleLogin(event)">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your username">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+            <button type="submit">Login</button>
+            <p><a href="register.html">Don't have an account? Register here</a></p>
+        </form>
+    </div>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            // Ambil data dari form
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            
+            // Validasi login (contoh sederhana)
+            if (username === 'user' && password === 'pass') {
+                window.location.href = "dashboard.html"; // Arahkan ke halaman dashboard jika login berhasil
+            } else {
+                alert('Username atau Password salah!');
+            }
+        }
+    </script>
+</body>
+</html>

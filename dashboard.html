@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Rumah Sehat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="wrapper">
+            <div class="logo"><a href="index.html">Rumah Sehat</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#overview">Dashboard</a></li>
+                    <li><a href="#articles">Artikel</a></li>
+                    <li><a href="profile.html">Profil</a></li>
+                    <li><a href="settings.html">Pengaturan</a></li>
+                    <li><a href="logout.html" class="tbl-biru">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="wrapper">
+            <!-- Dashboard Overview -->
+            <section id="overview">
+                <h2>Selamat Datang, User</h2>
+                <p>Ini adalah halaman dashboard Anda. Di sini Anda bisa melihat ringkasan kesehatan, aktivitas terbaru, dan artikel kesehatan.</p>
+                
+                <!-- Ringkasan Kesehatan -->
+                <div class="widget">
+                    <h3>Ringkasan Kesehatan</h3>
+                    <div class="widget-content">
+                        <div class="stat">
+                            <h4>Berat Badan</h4>
+                            <p>70 kg</p>
+                        </div>
+                        <div class="stat">
+                            <h4>Tinggi Badan</h4>
+                            <p>175 cm</p>
+                        </div>
+                        <div class="stat">
+                            <h4>IMT</h4>
+                            <p>22.9</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grafik Kesehatan -->
+                <div class="widget">
+                    <h3>Grafik Kesehatan</h3>
+                    <div class="chart-container">
+                        <canvas id="healthChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+
+                <!-- Aktivitas Terakhir -->
+                <div class="widget">
+                    <h3>Aktivitas Terakhir</h3>
+                    <ul>
+                        <li>
+                            <strong>Konsultasi Kesehatan</strong> - 1 Agustus 2024
+                            <p>Konsultasi dengan Dr. John mengenai diet sehat.</p>
+                        </li>
+                        <li>
+                            <strong>Pelatihan Kebugaran</strong> - 5 Agustus 2024
+                            <p>Latihan rutin dengan pelatih pribadi.</p>
+                        </li>
+                        <li>
+                            <strong>Pelatihan Kebugaran</strong> - 5 Agustus 2024
+                            <p>Latihan rutin dengan pelatih pribadi. Fokus pada latihan kekuatan dan ketahanan untuk meningkatkan kebugaran secara keseluruhan. Latihan ini mencakup berbagai latihan tubuh bagian atas dan bawah, serta sesi kardio untuk meningkatkan stamina.</p>
+                        </li>
+                        <li>
+                            <strong>Pemeriksaan Kesehatan Rutin</strong> - 10 Agustus 2024
+                            <p>Pemeriksaan kesehatan tahunan untuk memantau kesehatan jantung dan sistem pencernaan. Tes termasuk pengukuran tekanan darah, kolesterol, dan gula darah. Hasil pemeriksaan menunjukkan semua nilai berada dalam batas normal.</p>
+                        </li>
+                        <li>
+                            <strong>Webinar Kesehatan</strong> - 15 Agustus 2024
+                            <p>Partisipasi dalam webinar tentang kesehatan mental dan teknik manajemen stres. Webinar ini dihadiri oleh seorang psikolog terkemuka yang membagikan tips tentang cara mengelola stres dan meningkatkan kesehatan mental melalui teknik meditasi dan mindfulness.</p>
+                        </li>
+                        <li>
+                            <strong>Program Diet Kesehatan</strong> - 20 Agustus 2024
+                            <p>Memulai program diet baru dengan fokus pada makanan rendah kalori dan tinggi nutrisi. Program ini melibatkan perencanaan makanan mingguan dan pelacakan asupan kalori untuk mencapai tujuan kesehatan yang lebih baik.</p>
+                        </li>
+                        <li>
+                            <strong>Sesi Yoga Online</strong> - 25 Agustus 2024
+                            <p>Sesi yoga online untuk meningkatkan fleksibilitas dan mengurangi ketegangan otot. Instruktur yoga memberikan panduan tentang teknik pernapasan dan pose yoga yang membantu menenangkan pikiran dan tubuh.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tips Kesehatan -->
+                <div class="widget">
+                    <h3>Tips Kesehatan</h3>
+                    <p>1. Minum air putih yang cukup setiap hari.</p>
+                    <p>2. Konsumsi makanan yang kaya akan serat dan vitamin.</p>
+                    <p>3. Lakukan olahraga secara teratur.</p>
+                    <p>4. Cukup tidur dan kelola stres dengan baik.</p>
+                    <p>5. Jaga kebersihan pribadi dan lingkungan.</p>
+                    <p>6. Hindari kebiasaan buruk.</p>
+                    <p>7. Lakukan pemeriksaan kesehatan secara rutin.</p>
+                    <p>8. Kelola berat badan dengan bijak.</p>
+                    <p>9. Perhatikan kesehatan mental dan emosional.</p>
+                    <p>10. Jaga hubungan sosial yang sehat.</p>
+                </div>
+            </section>
+
+            <!-- Artikel Terbaru -->
+            <section id="articles">
+                <div class="widget">
+                    <h3>Artikel Terbaru</h3>
+                    <article>
+                        <h4>5 Cara Mudah Menjaga Kesehatan Jantung</h4>
+                        <p>Artikel ini membahas berbagai cara untuk menjaga kesehatan jantung Anda, termasuk diet yang tepat dan latihan fisik.</p>
+                        <a href="#article-jantung" class="">Baca selengkapnya</a>
+                    </article>
+                    <article>
+                        <h4>Manfaat Berolahraga di Pagi Hari</h4>
+                        <p>Temukan manfaat berolahraga di pagi hari dan bagaimana hal ini dapat meningkatkan kualitas hidup Anda.</p>
+                        <a href="#article-olahraga" class="">Baca selengkapnya</a>
+                    </article>
+                </div>
+
+                <!-- Artikel Detail -->
+                <div class="widget">
+                    <h3 id="article-jantung">5 Cara Mudah Menjaga Kesehatan Jantung</h3>
+                    <p>Menjaga kesehatan jantung sangat penting untuk kesehatan secara keseluruhan. Berikut adalah beberapa cara mudah untuk menjaga kesehatan jantung Anda:</p>
+                    <article>
+                        <h4>1. Konsumsi Makanan Sehat</h4>
+                        <p>Perbanyak konsumsi buah-buahan, sayuran, dan biji-bijian. Kurangi asupan makanan tinggi lemak jenuh dan gula.</p>
+                    </article>
+                    <article>
+                        <h4>2. Rutin Berolahraga</h4>
+                        <p>Olahraga teratur membantu menjaga berat badan dan meningkatkan kesehatan jantung. Cobalah aktivitas seperti berjalan, berlari, atau bersepeda.</p>
+                    </article>
+                    <article>
+                        <h4>3. Hindari Merokok dan Alkohol</h4>
+                        <p>Merokok dan konsumsi alkohol berlebihan dapat merusak jantung dan pembuluh darah. Hindarilah kebiasaan ini untuk kesehatan jantung yang lebih baik.</p>
+                    </article>
+                    <article>
+                        <h4>4. Monitor Tekanan Darah dan Kolesterol</h4>
+                        <p>Periksalah tekanan darah dan kadar kolesterol Anda secara teratur. Jaga agar tetap dalam batas normal untuk mengurangi risiko penyakit jantung.</p>
+                    </article>
+                    <article>
+                        <h4>5. Kelola Stres</h4>
+                        <p>Stres dapat memengaruhi kesehatan jantung. Lakukan teknik relaksasi seperti meditasi atau yoga untuk membantu mengelola stres.</p>
+                    </article>
+                </div>
+
+                <div class="widget">
+                    <h3 id="article-olahraga">Manfaat Berolahraga di Pagi Hari</h3>
+                    <p>Berolahraga di pagi hari memiliki berbagai manfaat bagi kesehatan fisik dan mental Anda. Berikut adalah beberapa keuntungan utama dari rutinitas pagi yang aktif:</p>
+
+                    <article>
+                        <h4>1. Meningkatkan Energi dan Produktivitas</h4>
+                        <p>Olahraga di pagi hari dapat meningkatkan aliran darah dan oksigen ke seluruh tubuh, termasuk ke otak. Ini membantu Anda merasa lebih segar dan berenergi sepanjang hari, serta meningkatkan konsentrasi dan produktivitas.</p>
+                        <h4>6 Cara Meningkatkan Energi dan Produktivitas</h4>
+                        <p>1. Membuat daftar pekerjaan
+                            Membuat daftar pekerjaan adalah cara yang bagus untuk mengingat pekerjaan apa saja yang harus dilakukan. Namun, daftar pekerjaan yang terlalu panjang terkadang membuat Anda merasa kewalahan, bahkan sebelum memulainya.
+                            Untuk menyiasatinya, buatlah daftar pekerjaan prioritas, kelompokkan pekerjaan mana yang harus diselesaikan segera dan yang bisa diselesaikan dalam jangka panjang.
+                            Selain mengingat pekerjaan, membuat daftar pekerjaan juga membantu Anda memantau perkembangan dalam menyelesaikan pekerjaan.</p> 
+                        <p>2. Menyiapkan area kerja dengan baik
+                            Meja kerja yang berantakan dapat memecah fokus dan menyulitkan Anda dalam mencari keperluan kerja, sehingga dapat menghambat produktivitas kerja. Cobalah untuk tidak meletakkan terlalu banyak barang di meja kerja, terutama yang tidak berkaitan dengan pekerjaan.
+                            Perhatikan pula kenyamanan Anda. Bila Anda menghabiskan banyak waktu untuk duduk di depan meja kerja, gunakan kursi yang nyaman dengan tinggi yang sesuai postur dan meja kerja Anda untuk mengurangi risiko terkena sakit punggung atau leher.</p>
+                        <p>3. Menghindari hal-hal yang bisa mengganggu fokus
+                            Konsentrasi merupakan kunci dalam meningkatkan produktivitas kerja. Jadi, pastikan Anda tetap fokus dengan menjauhi hal yang dapat mengganggu konsentrasi Anda. Misalnya, dengan mematikan nada dering atau notifikasi ponsel.</p>
+                        <p>4. Mendengarkan musik favorit
+                            Mendengarkan musik favorit dapat meningkatkan suasana hati, gairah, serta proses berpikir yang dapat memengaruhi kreativitas, kualitas kerja, dan produktivitas kerja.
+                            Apabila pekerjaan Anda memungkinkan untuk mendengarkan musik, pilihlah musik yang dapat mempertahankan konsentrasi. Misalnya, musik instrumental yang membuat Anda tetap fokus.</p>
+                        <p>5. Mengonsumsi kopi
+                            Kopi terbukti sebagai salah satu minuman yang mampu meningkatkan fokus, sehingga produktivitas kerja bisa meningkat. Secara medis, kafein dalam kopi bisa menghambat kerja adenosine di otak, yaitu zat yang memicu rasa kantuk. Adenosine yang tidak aktif akan membuat seseorang tetap terjaga.
+                            Meski begitu, hindari konsumsi kopi lebih dari 6 gelas dalam satu hari. Konsumsi kopi yang berlebihan justru dapat meningkatkan risiko terjadinya sakit kepala migrain, penyakit asam lambung, dan insomnia.</p>
+                        <p>6. Melakukan power nap
+                            Power nap atau tidur siang selama 20–30 menit terbukti mampu meningkatkan fokus dan konsentrasi. Lakukan power nap di waktu istirahat untuk meningkatkan produktivitas kerja Anda setelahnya.
+                            Produktivitas jangka panjang sejatinya juga dipengaruhi oleh kondisi fisik. Oleh karena itu, jangan lupa untuk selalu menerapkan pola hidup sehat seperti tidur yang cukup, olahraga secara rutin, dan konsumsi makanan sehat.
+                            Memperhatikan keseimbangan kehidupan pribadi dan pekerjaan juga penting dalam menjaga kondisi fisik maupun mental seseorang. Misalnya, sesederhana memberikan batas waktu jelas kapan memulai dan berhenti kerja,.
+                            Nah, beberapa cara meningkatkan produktivitas kerja di atas bisa Anda coba lakukan. Jika masih merasa belum produktif dan maksimal dalam menjalani pekerjaan, tidak ada salahnya untuk berkonsultasi dengan psikolog mengenai kendala yang Anda rasakan.</p>                          
+                    <article>
+                        <h4>2. Membantu Mengatur Berat Badan</h4>
+                        <p>Berolahraga secara rutin di pagi hari dapat membantu membakar kalori dan meningkatkan metabolisme. Ini adalah cara yang efektif untuk menjaga berat badan dan mencegah obesitas.</p>
+                        <h4>7 Cara Menjaga Berat Badan</h4>
+                        <p>1. Menyusun meal plan</p>
+                        <p>2. Bergerak aktif atau Olahraga</p>
+                        <p>3. Tetap makan dengan menu berbeda</p>
+                        <p>4. Jangan melewatkan sarapan</p>
+                        <p>5. Istirahat yang cukup</p>
+                        <p>6. Penuhi kebutuhan cairan</p>
+                        <p>7. Tak perlu menghindari makanan kesukaan</p>
+                    <article>
+                        <h4>3. Meningkatkan Mood dan Mengurangi Stres</h4>
+                        <p>Olahraga merangsang produksi endorfin, yang dikenal sebagai hormon kebahagiaan. Ini membantu mengurangi stres, kecemasan, dan depresi, serta meningkatkan suasana hati Anda.</p>
+                        <h4>7 Cara Meningkatkan Mood</h4>
+                        <p>1. Berolahraga secara rutin</p>
+                        <p>2. Mengonsumsi makanan tertentu.</p>
+                        <p>3. Melakukan meditasi.</p>
+                        <p>4. Mendengarkan musik.</p>
+                        <p>5. Tidur siang.</p>
+                        <p>6. Tidur siang.</p>
+                        <p>7. Berinteraksi dengan orang lain.</p>
+                    <article>
+                        <h4>4. Meningkatkan Kualitas Tidur</h4>
+                        <p>Berolahraga di pagi hari dapat membantu mengatur pola tidur Anda. Dengan aktivitas fisik yang dilakukan lebih awal, tubuh Anda akan lebih siap untuk tidur malam yang nyenyak.</p>
+                        <h4>5 Cara Meningkatkan Kualitas Tidur</h4>
+                        <p>1. Tetapkan waktu tidur yang konsisten setiap malam.</p>
+                        <p>2. Biasakan tidur dengan mematikan lampu.</p>
+                        <p>3. Rajin berolahraga.</p>
+                        <p>4. Kurangi konsumsi kopi.</p>
+                        <p>5. Perhatikan jam tidur siang.</p>
+                    <article>
+                        <h4>5. Membantu Membangun Kebiasaan Sehat</h4>
+                        <p>Memulai hari Anda dengan berolahraga menciptakan kebiasaan yang sehat. Dengan konsistensi, ini dapat memotivasi Anda untuk tetap aktif sepanjang hari dan membuat pilihan gaya hidup sehat lainnya.</p>
+                        <h4>5 Perilaku Kebiasaan Sehat</h4>
+                        <p>1. Perhatikan jam tidur siang.</p>
+                        <p>2. Jaga Kebersihan Toilet.</p>
+                        <p>3. Konsumsi Makanan Sehat.</p>
+                        <p>4. Olahraga secara Rutin.</p>
+                        <p>5. Hindari Gaya Hidup Tidak Sehat.</p>
+                    <p>Dengan memanfaatkan waktu pagi untuk berolahraga, Anda dapat merasakan berbagai manfaat ini dan memulai hari Anda dengan cara yang positif dan produktif.</p>
+                </div>
+
+                <!-- Konten Terbaru dan Rekomendasi -->
+<div class="widget">
+    <h3>Konten Terbaru dan Rekomendasi</h3>
+    <ul class="recommendations">
+        <li><a href="#">Artikel Terbaru: Cara Menjaga Kesehatan Mental</a></li>
+        <li><a href="#">Video: Latihan Fisik untuk Pemula</a></li>
+        <li><a href="#">Rekomendasi: 5 Aplikasi Kesehatan Terbaik</a></li>
+    </ul>
+</div>
+
+               <!-- Kontak Dukungan -->
+<div class="widget">
+    <h3>Kontak Dukungan</h3>
+    <p>Jika Anda membutuhkan bantuan, silakan hubungi tim dukungan kami:</p>
+    <form id="support-form" action="#" method="post">
+        <label for="support-message">Pesan Anda:</label>
+        <textarea id="support-message" name="message" rows="4" required></textarea>
+        <button type="submit">Kirim Pesan</button>
+    </form>
+    <div id="success-message" style="display:none; color: green; margin-top: 10px;">
+        Pesan Anda telah berhasil dikirim. Terima kasih!
+    </div>
+</div>
+</section>
+</div>
+</main>
+
+<script>
+document.getElementById('support-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Mencegah pengiriman formulir secara default
+
+    // Di sini Anda bisa menambahkan logika untuk mengirim pesan ke server, jika diperlukan
+    // Misalnya menggunakan fetch() untuk mengirim data ke server
+
+    // Menampilkan pesan sukses
+    document.getElementById('success-message').style.display = 'block';
+
+    // Mengosongkan formulir setelah pengiriman
+    this.reset();
+});
+</script>
+
+<!-- Statistik Penggunaan -->
+<div class="widget">
+    <h3>Statistik Penggunaan</h3>
+    <p><strong>Login Terakhir:</strong> 22 Agustus 2024</p>
+    <p><strong>Jumlah Login Bulanan:</strong> 15</p>
+    <p><strong>Jumlah Aktivitas Terkini:</strong> 5</p>
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrapper">
+            <p>&copy; 2024 Rumah Sehat. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Script untuk grafik kesehatan
+        var ctx = document.getElementById('healthChart').getContext('2d');
+        var healthChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                datasets: [{
+                    label: 'Berat Badan (kg)',
+                    data: [70, 72, 71, 69, 70, 71],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    fill: false
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        beginAtZero: true
+                    },
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

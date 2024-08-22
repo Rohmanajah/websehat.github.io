@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Rumah Sehat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="wrapper">
+            <div class="logo"><a href="index.html">Rumah Sehat</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="#profile">Profil</a></li>
+                    <li><a href="settings.html">Pengaturan</a></li>
+                    <li><a href="logout.html" class="tbl-biru">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="wrapper">
+            <!-- Ringkasan Akun -->
+            <div class="widget">
+                <h3>Ringkasan Akun</h3>
+                <div class="account-summary">
+                    <p><strong>Nama Pengguna:</strong> User Name</p>
+                    <p><strong>Email:</strong> user@example.com</p>
+                    <p><strong>Status Langganan:</strong> Aktif</p>
+                </div>
+            </div>
+            <!-- Histori Pembelian atau Langganan -->
+            <div class="widget">
+                 <h3>Histori Pembelian dan Langganan</h3>
+                 <table class="purchase-history">
+        <thead>
+            <tr>
+                <th>Tanggal</th>
+                <th>Deskripsi</th>
+                <th>Jumlah</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>20 Agustus 2024</td>
+                <td>Langganan Premium</td>
+                <td>$9.99</td>
+                <td>Aktif</td>
+            </tr>
+            <tr>
+                <td>15 Agustus 2024</td>
+                <td>Langganan Dasar</td>
+                <td>$4.99</td>
+                <td>Berakhir</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+            
+            <!-- Riwayat Aktivitas -->
+            <div class="widget">
+                <h3>Riwayat Aktivitas</h3>
+                <ul class="activity-log">
+                    <li>Login pada 21 Agustus 2024</li>
+                    <li>Perubahan pengaturan tema pada 20 Agustus 2024</li>
+                    <li>Pengiriman pesan dukungan pada 19 Agustus 2024</li>
+                </ul>
+            </div>
+            
+            <!-- Preferensi Akun -->
+            <div class="widget">
+                <h3>Preferensi Akun</h3>
+                <form action="#" method="post">
+                    <label for="email-notifications">Notifikasi Email:</label>
+                    <select id="email-notifications" name="email-notifications">
+                        <option value="all">Semua</option>
+                        <option value="important">Hanya Penting</option>
+                        <option value="none">Tidak Ada</option>
+                    </select>
+                    
+                    <label for="theme">Tema:</label>
+                    <select id="theme" name="theme">
+                        <option value="light">Terang</option>
+                        <option value="dark">Gelap</option>
+                    </select>
+                    
+                    <button type="submit">Simpan Pengaturan</button>
+                </form>
+                <div id="success-message" class="success-message">
+                    Tema berhasil diubah menjadi gelap.
+                </div>
+            </div>
+            
+            <!-- Preferensi Privasi -->
+            <div class="widget">
+                <h3>Preferensi Privasi</h3>
+                <form id="privacy-form" action="#" method="post">
+                    <label for="profile-visibility">Visibilitas Profil:</label>
+                    <select id="profile-visibility" name="profile-visibility">
+                        <option value="public">Publik</option>
+                        <option value="friends">Teman</option>
+                        <option value="private">Pribadi</option>
+                    </select>
+                    
+                    <label for="share-data">Bagikan Data Dengan:</label>
+                    <select id="share-data" name="share-data">
+                        <option value="all">Semua</option>
+                        <option value="partners">Partner</option>
+                        <option value="none">Tidak Ada</option>
+                    </select>
+                    
+                    <button type="submit">Simpan Pengaturan Privasi</button>
+                </form>
+            </div>
+            
+            <!-- Statistik Penggunaan -->
+            <div class="widget">
+                <h3>Statistik Penggunaan</h3>
+                <p><strong>Login Terakhir:</strong> 22 Agustus 2024</p>
+                <p><strong>Jumlah Login Bulanan:</strong> 15</p>
+                <p><strong>Jumlah Aktivitas Terkini:</strong> 5</p>
+            </div>
+
+            <!-- Pemberitahuan Sistem -->
+            <div class="widget">
+                <h3>Pemberitahuan Sistem</h3>
+                <div class="system-notifications">
+                    <p><strong>23 Agustus 2024:</strong> Pembaruan sistem dijadwalkan pada 25 Agustus 2024.</p>
+                    <p><strong>21 Agustus 2024:</strong> Beberapa fitur mungkin mengalami gangguan sementara.</p>
+                </div>
+            </div>
+
+            <!-- Pembaruan Profil -->
+<div class="widget">
+    <h3>Pembaruan Profil</h3>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="profile-pic">Foto Profil:</label>
+        <input type="file" id="profile-pic" name="profile-pic">
+        
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Ceritakan tentang diri Anda"></textarea>
+        
+        <button type="submit">Perbarui Profil</button>
+    </form>
+</div>
+        
+            <!-- Kebijakan dan Bantuan -->
+            <div class="widget">
+                <h3>Kebijakan dan Bantuan</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Kebijakan Privasi</a></li>
+                    <li><a href="terms-of-service.html">Syarat dan Ketentuan</a></li>
+                    <li><a href="help-center.html">Pusat Bantuan</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrapper">
+            <p>&copy; 2024 Rumah Sehat. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('preferences-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Mencegah pengiriman formulir secara default
+
+            // Mendapatkan nilai tema dari formulir
+            var themeValue = document.getElementById('theme').value;
+
+            // Menampilkan pesan sukses jika tema diubah menjadi gelap
+            if (themeValue === 'dark') {
+                document.getElementById('success-message').style.display = 'block';
+            } else {
+                document.getElementById('success-message').style.display = 'none';
+            }
+
+            // Di sini Anda bisa menambahkan logika untuk menyimpan pengaturan ke server jika diperlukan
+            // Misalnya menggunakan fetch() untuk mengirim data ke server
+
+            // Mengosongkan formulir setelah pengiriman
+            this.reset();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,563 @@
+/* Reset default margin dan padding */
+body, h1, h2, h3, p, ul, li, a, img {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling untuk body */
+body {
+    font-family: Arial, sans-serif; /* Font standar */
+    line-height: 1.6; /* Jarak antar baris */
+    color: #333; /* Warna teks utama */
+    background-color: #f4f4f4; /* Warna latar belakang halaman */
+}
+
+/* Styling untuk navigasi */
+nav {
+    background: #4CAF50; /* Latar belakang hijau untuk navigasi */
+    color: #fff; /* Warna teks putih */
+    padding: 10px 0; /* Ruang di dalam navigasi */
+}
+
+nav .wrapper {
+    max-width: 1200px; /* Lebar maksimum konten navigasi */
+    margin: 0 auto; /* Pusatkan konten navigasi */
+    display: flex;
+    justify-content: space-between; /* Pusatkan konten navigasi */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+}
+
+nav .logo a {
+    color: #fff; /* Warna teks putih untuk logo */
+    text-decoration: none; /* Menghilangkan garis bawah pada logo */
+    font-size: 24px; /* Ukuran font untuk logo */
+    font-weight: bold; /* Membuat font tebal untuk logo */
+}
+
+nav .menu ul {
+    list-style: none; /* Menghilangkan bullet pada daftar */
+    display: flex; /* Menampilkan item daftar secara horizontal */
+}
+
+nav .menu ul li {
+    margin: 0 15px; /* Jarak antar item menu */
+}
+
+nav .menu ul li a {
+    color: #fff; /* Warna teks putih untuk tautan */
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    font-weight: bold; /* Membuat teks tautan lebih tebal */
+}
+
+/* Styling untuk konten utama */
+.wrapper {
+    max-width: 1200px; /* Lebar maksimum konten */
+    margin: 0 auto; /* Pusatkan konten */
+    padding: 20px; /* Ruang di dalam konten */
+}
+
+/* Styling untuk section */
+section {
+    padding: 20px 0; /* Ruang di atas dan bawah section */
+}
+
+section img {
+    width: 100%; /* Lebar penuh untuk gambar */
+    height: auto; /* Sesuaikan tinggi gambar secara proporsional */
+    border-radius: 8px; /* Sudut melengkung pada gambar */
+    margin-bottom: 20px; /* Jarak bawah gambar */
+}
+
+section .kolom {
+    margin: 20px 0; /* Jarak atas dan bawah kolom */
+}
+
+section .kolom p.deskripsi {
+    font-weight: bold; /* Membuat teks deskripsi lebih tebal */
+    color: #4CAF50; /* Warna hijau untuk deskripsi */
+    margin-bottom: 10px; /* Jarak bawah deskripsi */
+}
+
+section .kolom h2 {
+    color: #333; /* Warna teks untuk judul */
+    margin-bottom: 10px; /* Jarak bawah judul */
+}
+
+section .kolom a.tbl-pink,
+section .kolom a.tbl-biru {
+    display: inline-block; /* Menampilkan tautan sebagai blok inline */
+    padding: 10px 20px; /* Ruang di dalam tautan */
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    border-radius: 4px; /* Sudut melengkung pada tautan */
+    font-weight: bold; /* Membuat teks tautan lebih tebal */
+}
+
+section .kolom a.tbl-pink {
+    background-color: #e91e63; /* Warna latar belakang merah muda */
+    color: #fff; /* Warna teks putih */
+}
+
+section .kolom a.tbl-pink:hover {
+    background-color: #d81b60; /* Warna latar belakang merah muda saat hover */
+}
+
+section .kolom a.tbl-biru {
+    background-color: #2196F3; /* Warna latar belakang biru */
+    color: #fff; /* Warna teks putih */
+}
+
+section .kolom a.tbl-biru:hover {
+    background-color: #1976D2; /* Warna latar belakang biru saat hover */
+}
+
+/* Styling untuk footer */
+#contact {
+    background-color: #4CAF50; /* Warna latar belakang hijau untuk footer */
+    color: #fff; /* Warna teks putih */
+    padding: 20px 0; /* Ruang di dalam footer */
+}
+
+.footer {
+    max-width: 1200px; /* Lebar maksimum konten footer */
+    margin: 0 auto; /* Pusatkan konten footer */
+    display: flex; /* Menampilkan item footer secara fleksibel */
+    flex-wrap: wrap; /* Membungkus item footer jika diperlukan */
+    gap: 20px; /* Jarak antara item footer */
+}
+
+.footer-section {
+    flex: 1; /* Item footer memanjang untuk mengisi ruang */
+    min-width: 200px; /* Lebar minimum item footer */
+}
+
+.footer-section h3 {
+    margin-bottom: 10px; /* Jarak bawah untuk judul footer */
+}
+
+.footer-section p {
+    margin-bottom: 10px; /* Jarak bawah untuk paragraf footer */
+}
+
+/* Styling untuk hak cipta */
+footer {
+    background-color: #333; /* Warna latar belakang gelap untuk footer */
+    color: #fff; /* Warna teks putih */
+    text-align: center; /* Teks di tengah */
+    padding: 10px 0; /* Ruang di dalam footer */
+}
+
+footer .wrapper {
+    max-width: 1200px; /* Lebar maksimum konten footer */
+    margin: 0 auto; /* Pusatkan konten footer */
+}
+
+
+#login, #register {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 500px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+#login::before, #register::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 4px solid #364f6b;
+    border-radius: 16px;
+    z-index: -1;
+}
+
+#login:hover, #register:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+#login h2, #register h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#login label, #register label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#login input, #register input {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #fff;
+}
+
+#login button, #register button {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #333;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(100% - 22px);
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+#login button:hover, #register button:hover {
+    background-color: #555;
+}
+
+/* Reset beberapa default styling browser */
+body, h1, h2, h3, h4, p, ul, li, a, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Atur font dasar dan warna latar belakang */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding-top: 60px; /* Memberikan ruang untuk header tetap */
+}
+
+/* Header styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header .menu ul {
+    list-style: none;
+    display: flex;
+}
+
+header .menu ul li {
+    margin: 0 15px;
+}
+
+header .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header .menu ul li a.tbl-biru {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header .menu ul li a.tbl-biru:hover {
+    background-color: #0056b3;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+main .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling untuk widget */
+.widget {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.widget h3 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.widget-content {
+    display: flex;
+    gap: 20px;
+}
+
+.stat {
+    flex: 1;
+}
+
+.stat h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.stat p {
+    font-size: 1.1em;
+}
+
+/* Styling untuk chart */
+.chart-container {
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+
+/* Styling untuk artikel */
+#articles article {
+    margin-bottom: 20px;
+}
+
+#articles h4 {
+    margin-bottom: 10px;
+}
+
+#articles p {
+    margin-bottom: 10px;
+}
+
+#articles a.tbl-biru {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#articles a.tbl-biru:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Styling untuk form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .menu ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header .menu ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Styling untuk profil pengguna */
+.profile-info {
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-info p {
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Styling untuk link pengaturan akun */
+#profile ul {
+    list-style: none;
+    padding: 0;
+}
+
+#profile ul li {
+    margin-bottom: 10px;
+}
+
+#profile ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#profile ul li a.tbl-biru {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+#profile ul li a.tbl-biru:hover {
+    background-color: #0056b3;
+}
+
+/* Styling untuk halaman pengaturan */
+form {
+    margin-top: 15px;
+}
+
+form input[type="password"],
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+.widget {
+    margin-bottom: 20px;
+}
+
+.tbl-biru {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.tbl-biru:hover {
+    background: #0056b3;
+}
+
+/* Styling untuk halaman logout */
+#logout {
+    text-align: center;
+    padding: 50px;
+}
+
+#logout h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#logout p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#logout a {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+#logout a:hover {
+    background: #0056b3;
+}
+
